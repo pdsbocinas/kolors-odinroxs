@@ -15,13 +15,33 @@
 <div class="component searchBar">
 	<form id="searchForm" method="get" action="/jm/com.mercadoshops.web.frontend.page.PageController">
 		<input type="hidden" name="view" value="result">
-		<input id="search" type="search" name="q" value="" class="inputField">
-		<input type="submit" value="Buscar" class="ch-btn ch-secondary button">
+		<fieldset class="subcomponent search">
+			<input type="submit" value="Buscar" class="ch-btn ch-secondary button">
+			<input id="search" type="search" name="q" value="" class="inputField">
+		</fieldset>
+		<span class="sprite find"></span>
 	</form> 
-</div>#if( $shopHasCart )
+</div>
+<div class="component_share">
+	<ul>
+		<li>
+			<span class="share">R</span>
+		</li>
+		<li>
+			<span class="share">R</span>
+		</li>
+		<li>
+			<span class="share">R</span>
+		</li>
+		<li>
+			<span class="share">R</span>
+		</li>
+	</ul>
+</div>
+#if( $shopHasCart )
 	<div id="cart" class="component cartButton">
-		<span id="mini-cart-container" class="bg-cart">
-		<a href="/cart" title="Ver Carrito" rel="nofollow" class="ch-btn ch-secondary button">Ver Carrito</a>
+		<span id="mini-cart-container" class="">
+			<a href="/cart" title="Ver Carrito" rel="nofollow" class="bg-cart"></a>
 		</span>
 	</div>
 #end

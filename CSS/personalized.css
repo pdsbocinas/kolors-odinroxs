@@ -1,5 +1,9 @@
 /* Escribe aquí las clases que quieras personalizar. Consulta la documentación en http://blog.mercadoshops.com/html/#EditandoCSS */
 
+body {
+	max-width: 1200px;
+}
+
 h2 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px !important;
@@ -8,13 +12,96 @@ h2 {
 	color: #F60;
 	text-decoration: none;
 }
-.title {
-    color: #F60;
-}
 
 .price {
-    color: #333;
-	font-size:20px;
-    font-style: normal;
-    font-weight: bold;
+	color: #333;
+}
+
+/* Header */
+
+.header-top {
+	background: #000;
+	height: 130px;
+	padding: 30px;
+}
+
+.sprite {
+	background: white url(//static.mercadoshops.com/static/images/spriteMain.png) -15px -319px no-repeat;
+}
+
+.component.searchBar {
+	float: left;
+}
+
+#searchWrap.searchWrapper {
+    position: absolute;
+    bottom: 0;
+    top: 40px;
+}
+
+.component.img-logo a {
+	display: inline;
+}
+
+.component.img-logo img {
+    max-width: 25%;
+    margin: 0 auto;
+    display: block;
+}
+
+span.find {
+	display: block;
+    width: 30px;
+    height: 19px;
+    float: left;
+    margin-top: 0px;
+}
+
+#searchWrap .component.searchBar #searchForm .inputField {
+	background: none;
+	height: 14px;
+	width: 145px;
+	margin: 0;
+}
+
+fieldset.subcomponent.search {
+	float: left;
+}
+
+.ch-btn.ch-secondary {
+	font-size: 12px;
+    height: 26px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    border-radius: 0;
+    margin: 0;
+}
+
+.ch-btn.ch-secondary:hover {
+	background: #fff;
+	color: #000;
+}
+
+.component_share {
+    float: left;
+    margin-top: 0px;
+}
+
+.component_share li{
+	display: inline-block;
+    margin-right: 7px;
+}
+
+span.share {
+	background: white;
+    padding: 2px 7px;
+    border-radius: 50px;
+    display: block;
+    float: left;
+}
+
+.component.cartButton .bg-cart {
+	padding: 0px 5px 5px 27px;
+    margin-right: 25px;
 }
