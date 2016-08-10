@@ -1,0 +1,20 @@
+/* Escribe aquí las clases que quieras personalizar. Consulta la documentación en http://blog.mercadoshops.com/html/#EditandoCSS */
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px !important;
+	line-height:20ps;
+	font-weight: normal;
+	color: #F60;
+	text-decoration: none;
+}
+.title {
+    color: #F60;
+}
+
+.price {
+    color: #333;
+	font-size:20px;
+    font-style: normal;
+    font-weight: bold;
+}
