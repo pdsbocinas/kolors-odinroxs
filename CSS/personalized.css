@@ -105,3 +105,21 @@ span.share {
 	padding: 0px 5px 5px 27px;
     margin-right: 25px;
 }
+
+.menu {
+	width: 100%;
+	display: block;
+}
+
+.menu li {
+	float: left;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.menu li a {
+	color: #fff;
+    text-transform: uppercase;
+}
+
+    
