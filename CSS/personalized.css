@@ -1,7 +1,9 @@
 /* Escribe aquí las clases que quieras personalizar. Consulta la documentación en http://blog.mercadoshops.com/html/#EditandoCSS */
 
 body {
-	max-width: 1200px;
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 h2 {
@@ -17,12 +19,22 @@ h2 {
 	color: #333;
 }
 
+.ch-container {
+	padding: 0px;
+}
+
+.wrapper {
+	padding: 0;
+}
+
+.wrapper.top {
+	padding-top: 0;
+}
+
 /* Header */
 
 .header-top {
 	background: #000;
-	height: 130px;
-	padding: 30px;
 }
 
 .sprite {
@@ -34,10 +46,16 @@ h2 {
 }
 
 #searchWrap.searchWrapper {
-    position: absolute;
     bottom: 0;
-    top: 40px;
+    top: 59px;
+    right: -26px;
 }
+
+.component.img-logo {
+	padding-top: 44px;
+	margin-bottom: 15px;
+}
+
 
 .component.img-logo a {
 	display: inline;
@@ -62,6 +80,7 @@ span.find {
 	height: 14px;
 	width: 145px;
 	margin: 0;
+	color: #fff;
 }
 
 fieldset.subcomponent.search {
@@ -107,14 +126,17 @@ span.share {
 }
 
 .menu {
-	width: 100%;
-	display: block;
+	max-width: 760px;
+    display: block;
+    padding-bottom: 30px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .menu li {
 	float: left;
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .menu li a {
