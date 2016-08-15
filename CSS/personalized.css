@@ -33,6 +33,22 @@ h2 {
 
 /* Header */
 
+.navWrapper .ch-g4-5 {
+	width: 92%;
+}
+
+.navWrapper {
+	padding: 5px 0;
+}
+
+.background {
+    background-color: #d99f53;
+}
+
+.component.simpleMenu li.first .link {
+	color: #fff;
+}
+
 .header-top {
 	background: #000;
 }
@@ -142,6 +158,30 @@ span.share {
 .menu li a {
 	color: #fff;
     text-transform: uppercase;
+}
+
+.simpleMenu li a {
+	color: #fff;
+}
+
+/* Main Content */
+
+.mainContent .ch-container {
+	padding: 0;
+}
+
+/* CAROUSEL */
+
+.ch-carousel-adaptive {
+	margin: 0;
+}
+
+.content-list li {
+	margin: 0;
+}
+
+.content-list li article {
+	width: 100%;
 }
 
     
