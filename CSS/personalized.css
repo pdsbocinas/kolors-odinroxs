@@ -172,6 +172,10 @@ span.share {
 
 /* CAROUSEL */
 
+.box-content-list {
+	height: 680px;
+}
+
 .ch-carousel-adaptive {
 	margin: 0;
 }
@@ -180,8 +184,95 @@ span.share {
 	margin: 0;
 }
 
+.content-list li figure {
+	display: block;
+}
+
+.content-list img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
 .content-list li article {
 	width: 100%;
 }
+
+.ch-carousel-disabled {
+	display: block;
+}
+
+.ch-carousel-pages {
+	bottom: 340px;
+	position: absolute;
+}
+
+.ch-carousel-prev, .ch-carousel-next {
+	top: 290px!important;
+} 
+
+/* Footer */
+
+footer.wrapper {
+	background: #000;
+	padding: 80px 40px;
+}
+
+.companyData a.logo {
+	overflow: hidden;
+    display: block;
+    margin-bottom: 35px;
+}
+
+.companyData ul {
+	padding-left: 10px;
+}
+
+.companyData ul li {
+	margin-bottom: 15px;
+}
+
+.companyData ul li a {
+	text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+}
+
+.component.addressExtended .socialData dd {
+	float: left;
+	margin-left: 35px;
+}
+
+.component.addressExtended .socialData dd span {
+    display: block;
+    background: red;
+    width: 24px;
+    height: 31px;
+    float: left;
+}
+
+.component.addressExtended .socialData dd:first-child {
+	margin-left: 0;
+}
+
+.component.addressExtended dl.companyData {
+	width: 30%;
+}
+
+.component.addressExtended dl.socialData {
+	width: 65%;
+	overflow: hidden;
+	padding-top: 12px;
+}
+
+.component.addressExtended dl.socialData p {
+	padding-left: 45px;
+	color: #f7941e;
+	text-transform: uppercase;
+}
+
+
+
+    
 
     
