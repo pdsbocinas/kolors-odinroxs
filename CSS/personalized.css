@@ -42,7 +42,7 @@ h2 {
 }
 
 .background {
-    background-color: #d99f53;
+    background-color: #f7941e;
 }
 
 .component.simpleMenu li.first .link {
@@ -53,8 +53,44 @@ h2 {
 	background: #000;
 }
 
-.sprite {
-	background: white url(//static.mercadoshops.com/static/images/spriteMain.png) -15px -319px no-repeat;
+.share, span.find, .component.cartButton .bg-cart, .sprite-footer {
+	background-image: url('http://www.kolors-odinroxs.com/images/sprite.png');
+	background-repeat: no-repeat;
+	background-color: transparent;
+	display: block;
+	text-indent: -9999px;
+}
+
+.sprite-footer {
+	background-image: url('http://www.kolors-odinroxs.com/images/sprite.png'); 
+}
+
+.fb {
+    width: 23px;
+    height: 22px;
+    background-position: 0 -37px;
+    background-size: 100% auto;
+}
+
+.tw {
+    width: 23px;
+    height: 23px;
+    background-size: 100% auto;
+    background-position: 0 -60px;
+}
+
+.pt {
+    width: 23px;
+    height: 23px;
+    background-size: 100% auto;
+    background-position: 0 -14px;
+}
+
+.ins {
+	width: 23px;
+    height: 23px;
+    background-size: 100% auto;
+    background-position: 0 -14px;
 }
 
 .component.searchBar {
@@ -64,7 +100,7 @@ h2 {
 #searchWrap.searchWrapper {
     bottom: 0;
     top: 59px;
-    right: -26px;
+    right: 40px;
 }
 
 .component.img-logo {
@@ -85,10 +121,11 @@ h2 {
 
 span.find {
 	display: block;
-    width: 30px;
+    width: 33px;
     height: 19px;
     float: left;
-    margin-top: 0px;
+    background-size: 94% auto;
+    margin: 3px;
 }
 
 #searchWrap .component.searchBar #searchForm .inputField {
@@ -125,20 +162,24 @@ fieldset.subcomponent.search {
 
 .component_share li{
 	display: inline-block;
-    margin-right: 7px;
+    margin-right: 2px;
 }
 
 span.share {
-	background: white;
-    padding: 2px 7px;
-    border-radius: 50px;
-    display: block;
     float: left;
 }
 
+.component.cartButton {
+	float: right;
+	display: block;
+}
+
 .component.cartButton .bg-cart {
-	padding: 0px 5px 5px 27px;
-    margin-right: 25px;
+	float: right;
+    height: 11px;
+    width: 20px;
+    background-size: 65% auto;
+    background-position: 0 -122px;
 }
 
 .menu {
@@ -245,10 +286,30 @@ footer.wrapper {
 
 .component.addressExtended .socialData dd span {
     display: block;
-    background: red;
     width: 24px;
-    height: 31px;
+    height: 28px;
     float: left;
+}
+
+.direccion {
+	background-position: 0 -178px;
+    width: 36px;
+    background-size: 177% auto;
+    height: 25px;
+}
+
+.telefono {
+	background-position: 0 -226px;
+    width: 30px!important;
+    background-size: 155% auto;
+    height: 29px!important;
+}
+
+.mail {
+	background-position: 0 -255px;
+    width: 33px!important;
+    background-size: 141% auto;
+    height: 32px!important;
 }
 
 .component.addressExtended .socialData dd:first-child {
