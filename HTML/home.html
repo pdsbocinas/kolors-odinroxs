@@ -5,7 +5,7 @@
 			#if($showContent)
 				<div class="box-content-list ch-g1">
 			#if($showContentImage)
-			 	<div class="ch-carousel" data-max-items="1">
+			 	<div class="ch-carousel principal" data-max-items="1">
 			 		<ul class="content-list">
 						#foreach ($contentImage in $contentImageList)
 							<li style="height: $contentImageMaxHeight">
@@ -223,7 +223,81 @@
 </div>
 <nav class="component itemGallery clearfix">
 	<h3 class="title-component"></h3>
-		<ul class="item-gallery">
+		<div class="container-filter">
+			<ul>
+				<li class="list">
+					<h4 class="active">Cuidados del cabello</h4>
+					<ul class="sub-list show">
+						<li><a href="#">Shampoos</a></li>
+						<li><a href="#">Acondicionadores</a></li>
+						<li><a href="#">Máscaras</a></li>
+						<li><a href="#">Ampollas</a></li>
+						<li><a href="#">Tratamientos</a></li>
+						<li><a href="#">Aceites</a></li>
+						<li><a href="#">Cremas de Peinado</a></li>
+						<li><a href="#">Ceras</a></li>
+						<li><a href="#">Geles</a></li>
+						<li><a href="#">Fijadores</a></li>
+						<li><a href="#">Alisados</a></li>
+						<li><a href="#">Tintura</a></li>
+						<li><a href="#">Shock de Keratina</a></li>
+						<li><a href="#">Decoloración</a></li>
+						<li><a href="#">Botox Capilar</a></li>
+					</ul>
+				</li>
+				<li class="list">
+					<h4>Herramientas</h4>
+					<ul class="sub-list">
+						<li><a href="#">Planchitas</a></li>
+						<li><a href="#">Bucleadoras</a></li>
+						<li><a href="#">Secadores</a></li>
+						<li><a href="#">Cortadoras</a></li>
+						<li><a href="#">Mini-Trimmer</a></li>
+						<li><a href="#">Ruleros Térmicos</a></li>
+						<li><a href="#">Tijeras</a></li>
+						<li><a href="#">Navajines</a></li>
+					</ul>				
+				</li>
+				<li class="list">
+					<h4>Equipamiento</h4>
+					<ul class="sub-list">
+						<li><a href="#">Sillones</a></li>
+						<li><a href="#">Maletines</a></li>
+						<li><a href="#">Lavacabezas</a></li>
+						<li><a href="#">Camillas</a></li>
+						<li><a href="#">Cabezas de Práctica</a></li>
+					</ul>
+				</li>
+				<li class="list">
+					<h4>Manicuría</h4>
+					<ul class="sub-list">
+						<li><a href="#">Esmaltes</a></li>
+						<li><a href="#">Quitaesmaltes</a></li>
+						<li><a href="#">Cabinas para uñas</a></li>
+						<li><a href="#">Alicates</a></li>
+					</ul>
+				</li>
+				<li class="list">
+					<h4>Depilación y Spa</h4>
+					<ul class="sub-list">
+						<li><a href="#">Calentadoras de Cera</a></li>
+						<li><a href="#">Cera</a></li>
+						<li><a href="#">Tornos</a></li>
+						<li><a href="#">Esterilizadores</a></li>
+					</ul>
+				</li>
+				<li class="list">
+					<h4>Accesorios</h4>
+					<ul class="sub-list">
+						<li><a href="#">Cepillos y peines</a></li>
+						<li><a href="#">Capas de peluquería</a></li>
+						<li><a href="#">Kits para tintura</a></li>
+						<li><a href="#">Balanzas</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<ul class="item-gallery home">
 		#foreach ($galleryItem in $galleryItemList)
 			<li class="background $promotionCssClass">
 				<article class="clearfix $promotionCssClass">
