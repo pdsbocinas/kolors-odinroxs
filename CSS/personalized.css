@@ -257,6 +257,10 @@ span.share {
 
 .container-filter h4{
 	cursor: pointer;
+	text-transform: uppercase;
+    font-weight: lighter;
+    color: #f7941e;
+    font-size: 16px;
 }
 
 .container-filter ul{
@@ -298,10 +302,36 @@ span.share {
 	width: 100%;
 }
 
+.component.itemGallery li.list ul li a {
+	color: #000;
+	font-size: 14px;
+}
+
 .component.itemGallery .item-gallery.home {
 	width: 74%;
     overflow: hidden;
 }
+
+.component.itemGallery.home li.background {
+	height: 350px;
+    width: 30%;
+    margin-left: 30px;
+}
+
+.component.itemGallery .item-gallery h2 a{
+	color: #000;
+    font-weight: 100;
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.component.itemGallery .item-gallery .price {
+    color: #333;
+    font-size: 26px;
+}
+
+
 
 /* Footer */
 
