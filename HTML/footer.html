@@ -17,16 +17,16 @@
 		    <dl class="socialData">
 		    	#if($showContactFooter)
 			    <dd>
-			    	<span class="direccion"></span>
+			    	<span class="sprite-footer direccion"></span>
 			    	<p>Coronel Ram&oacute;n Falc&oacute;n 2417, <br> Flores, Capital Federal,<br> Buenos Aires</p>
 			    </dd>
 		        #end
 		        <dd>
-		        	<span class="telefono"></span>
+		        	<span class="sprite-footer telefono"></span>
 		        	<p>15-5624-5108<br>4613-9140 / 8149</p>
 		        </dd> 
 				<dd>
-					<span class="telefono"></span>
+					<span class="sprite-footer mail"></span>
 					<p>kolors.odinroxs@gmail.com</p>
 				</dd>
 				<!--dt>
@@ -51,5 +51,20 @@
 	#end
  <!-- footer left -->
 	</div>
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+  
+		$(document).ready(function() {
+			$('.container-filter h4').each(function(){
+				var $content = $(this).closest('li').find('.sub-list');
+				$(this).click(function(e){
+					e.preventDefault();
+					$content.not(':animated').slideToggle();
+				});
+			});
+		});
+
+	</script>
 		<!--div class="component mshops">Powered by <a class="link" href="http://www.mercadoshops.com.ar" title="MercadoShops">MercadoShops</a></div-->
 </footer>
