@@ -211,6 +211,10 @@ span.share {
 	padding: 0;
 }
 
+.component.prominentProd {
+	border-bottom: none;
+}
+
 /* CAROUSEL */
 
 .ch-carousel.principal {
