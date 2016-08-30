@@ -276,7 +276,7 @@ span.share {
     width: 19%;
 }
 
-.container-filter h3.heading {
+.container-filter h3.heading, h3.heading {
     font-size: 33px;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
