@@ -45,6 +45,10 @@ h2 {
     background-color: #f7941e;
 }
 
+header.wrapper {
+    overflow: visible;
+}
+
 .component.simpleMenu li.first .link {
 	color: #fff;
 }
@@ -101,6 +105,7 @@ h2 {
     bottom: 0;
     top: 59px;
     right: 40px;
+    height: 30px;
 }
 
 .component.img-logo {
@@ -185,7 +190,7 @@ span.share {
 .menu {
 	max-width: 760px;
     display: block;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -203,6 +208,27 @@ span.share {
 
 .simpleMenu li a {
 	color: #fff;
+}
+
+.header-top .be-show {
+    display: none;
+    background: #fff;
+    height: 200px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.header-top .be-show li a {
+    color: #000;
+}
+
+.header-top .menu li.list-01:hover .be-show,
+.header-top .menu li.list-02:hover .be-show,
+.header-top .menu li.list-03:hover .be-show,
+.header-top .menu li.list-04:hover .be-show,
+.header-top .menu li.list-05:hover .be-show,
+.header-top .menu li.list-06:hover .be-show {
+    display: block;
 }
 
 /* Main Content */
