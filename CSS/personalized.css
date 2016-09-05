@@ -213,13 +213,30 @@ span.share {
 .header-top .be-show {
     display: none;
     background: #fff;
-    height: 200px;
+    height: 260px;
     position: absolute;
     z-index: 1000;
+    padding: 20px;
+}
+
+.header-top .be-show .column {
+    color: #000;
+    text-transform: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.header-top .be-show .column li {
+    float: none;
+    display: block;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
 }
 
 .header-top .be-show li a {
     color: #000;
+    text-transform: inherit;
+        font-family: 'Roboto';
 }
 
 .header-top .menu li.list-01:hover .be-show,
