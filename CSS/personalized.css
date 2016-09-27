@@ -15,6 +15,14 @@ h2 {
 	text-decoration: none;
 }
 
+#page-HOME .payMethod {
+    display: none;
+}
+
+#page-CONTACT .promoMP.payMethod {
+    margin: 70px 0 40px 255px;
+}
+
 .price {
 	color: #333;
 }
@@ -110,7 +118,7 @@ header.wrapper {
 
 .component.img-logo {
 	padding-top: 44px;
-	margin-bottom: 15px;
+	margin-bottom: 40px;
 }
 
 
@@ -188,22 +196,29 @@ span.share {
 }
 
 .menu {
-	max-width: 760px;
+	max-width: 905px;
     display: block;
     padding-bottom: 10px;
     overflow: hidden;
     margin: 0 auto;
 }
 
+.menu li:first-child {
+    margin-left: 0;
+}
+
 .menu li {
 	float: left;
     display: inline-block;
-    margin-right: 20px;
+    margin-left: 70px;
 }
 
 .menu li a {
 	color: #fff;
     text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .simpleMenu li a {
@@ -224,6 +239,7 @@ span.share {
     text-transform: inherit;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    margin-left: 0;
 }
 
 .header-top .be-show .column li {
@@ -231,6 +247,8 @@ span.share {
     display: block;
     margin-bottom: 12px;
     border-bottom: 1px solid #ccc;
+    margin-left: 0;
+    margin-right: 55px;
 }
 
 .header-top .be-show li a {
@@ -246,6 +264,10 @@ span.share {
 .header-top .menu li.list-05:hover .be-show,
 .header-top .menu li.list-06:hover .be-show {
     display: block;
+}
+
+.menu li.list-06 .be-show {
+    right: 190px;
 }
 
 /* Main Content */
@@ -419,7 +441,95 @@ span.share {
     font-size: 26px;
 }
 
+/* FORM CONTACT */
 
+.formContact {
+    overflow: hidden;
+    max-width: 905px;
+    margin: 40px auto;
+}
+
+.formContact .title-component {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 23px!important;
+    color: #000;
+}
+
+.formContact .ch-form-hint {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.formContact .ch-form-row label,
+.formContact p.ch-form-row.ch-form-required label {
+    color: #000;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: italic;
+}
+
+.formContact p.ch-form-row.ch-form-required input {
+    border: 1px solid #000;
+    border-radius: 0;
+    color: #000;
+    padding: 6px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+} 
+
+.formContact .ch-form-required em {
+    display: inline;
+    position: relative;
+    right: -1px;
+    top: -2px;
+}
+
+#contact-btn {
+    margin: 10px 0 0 143px;
+    background: #000;
+    border-radius: 0;
+    padding: 10px 60px;
+    height: auto;
+    font-family: "Roboto";
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#contact-btn:hover {
+    background-color: white!important;
+    color: #000;
+    border-color: #000;
+    background-image: none;
+    box-shadow: none;    
+}
+
+/* Quienes somos */
+
+.component.page-user {
+    padding: 45px 0px;
+    max-width: 770px;
+    margin: 0 auto;
+    font-family: "Roboto";
+}
+
+h5.title-component {
+    color: #000;
+}
+
+h5.title-component.first {
+    text-align: center;
+    font-family: "Roboto";
+    color: #000;
+    font-size: 35px!important;
+    margin-bottom: 30px;
+}
+
+.component.page-user .border {
+    border-top: 1px solid #f7941e;
+}
 
 /* Footer */
 
