@@ -1,34 +1,51 @@
 <footer class="ch-g1 wrapper bottom clearfix">
 	<div class="ch-container">
 		<address class="component addressExtended link">
-		    <dl class="companyData">
-				<a href="/" title="Inicio" class="logo">
-					<img src="/images/logo.jpg?" alt="Kolors Odinroxs" title="Kolors Odinroxs">
-				</a>
-				<ul>
-					<li><a href="http://www.kolors-odinroxs.com/about">Sobre Kolors</a></li>
-					<li><a href="http://www.kolors-odinroxs.com/shipping">¿Cómo Comprar?</a></li>
-					<li><a href="http://www.kolors-odinroxs.com/shipping">Pago y Envío</a></li>
-					<li><a href="#">Cambios y Devoluciones</a></li>
-					<li><a href="/contact">Contáctanos</a></li>
-				</ul>
+		    <dl class="socialData companyData">
+		    	<div class="box-logo-footer">
+					<a href="/" title="Inicio" class="logo">
+						<img src="/images/logo.jpg?" alt="Kolors Odinroxs" title="Kolors Odinroxs">
+					</a>
+					<dd>
+						<div class="component_share">
+							<ul>
+								<li class="title"><p>Seguinos en:</p></li>
+								<li>
+									<a href="https://www.facebook.com/KolorsOdinroxs/" target="_blank"><span class="share fb">facebook</span></a>
+								</li>
+								<li>
+									<a href="https://twitter.com/KolorsOdinroxs" target="_blank"><span class="share tw">twitter</span></a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/kolorsodinroxs/" target="_blank"><span class="share ins">Instagram</span></a>
+								</li>
+								<li>
+									<a href="https://www.pinterest.com/kolorsodinroxs/" target="_blank"><span class="share pt">Pinterest</span></a>
+								</li>
+							</ul>
+						</div>
+					</dd>
+				</div>
+				<div class="box-datos-footer">
+				#if($showContactFooter)
+				    <dd class="dato">
+				    	<span class="sprite-footer direccion"></span>
+				    	<p>Coronel Ram&oacute;n Falc&oacute;n 2417, <br> Flores, Capital Federal,<br> Buenos Aires</p>
+				    </dd>
+			        #end
+			        <dd class="dato">
+			        	<span class="sprite-footer telefono"></span>
+			        	<p>15-5624-5108<br>4613-9140 / 8149</p>
+			        </dd> 
+					<dd class="dato">
+						<span class="sprite-footer mail"></span>
+						<p class="mail">kolors.odinroxs@gmail.com</p>
+					</dd>
+				</div>
 		    </dl>
 		    
-		    <dl class="socialData">
-		    	#if($showContactFooter)
-			    <dd>
-			    	<span class="sprite-footer direccion"></span>
-			    	<p>Coronel Ram&oacute;n Falc&oacute;n 2417, <br> Flores, Capital Federal,<br> Buenos Aires</p>
-			    </dd>
-		        #end
-		        <dd>
-		        	<span class="sprite-footer telefono"></span>
-		        	<p>15-5624-5108<br>4613-9140 / 8149</p>
-		        </dd> 
-				<dd>
-					<span class="sprite-footer mail"></span>
-					<p>kolors.odinroxs@gmail.com</p>
-				</dd>
+		    <dl class="companyData">
+		    	
 				<!--dt>
 					Seguinos:
 				</dt>	
@@ -36,6 +53,13 @@
 
 				</dd>
 				<g:plusone size="medium" count="false" href="http://www.kolors-odinroxs.com"></g:plusone-->
+				<ul>
+					<li><a href="http://www.kolors-odinroxs.com/about">Sobre Kolors</a></li>
+					<li><a href="http://www.kolors-odinroxs.com/shipping">¿Cómo Comprar?</a></li>
+					<li><a href="http://www.kolors-odinroxs.com/shipping">Pago y Envío</a></li>
+					<li><a href="#">Cambios y Devoluciones</a></li>
+					<li><a href="/contact">Contáctanos</a></li>
+				</ul>
 			</dl>  
 
 		</address>
@@ -51,7 +75,10 @@
 	#end
  <!-- footer left -->
 	</div>
-	<script   src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<!--div class="component mshops">Powered by <a class="link" href="http://www.mercadoshops.com.ar" title="MercadoShops">MercadoShops</a></div-->
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 	<script type="text/javascript">
   
@@ -63,8 +90,18 @@
 					$content.not(':animated').slideToggle();
 				});
 			});
+
+			if($('body').is('#page-STATIC')){
+				$('.description').prepend( "<div class='box-image'><img src='/images/img-banner-qs.jpg'</div>" );
+			}
+
+			if($('body').is('#page-STATIC')){
+				$('.location .datos').html("<h3>Contactanos</h3><dl class='socialData'><dd><span class='sprite-footer direccion'></span><p>Coronel Ram&oacute;n Falc&oacute;n 2417, <br> Flores,Capital Federal,<br> Buenos Aires</p></dd><dd><span class='sprite-footer telefono'></span><p>15-5624-5108<br>4613-9140 / 8149</p></dd><dd><span class='sprite-footer mail'></span><p>kolors.odinroxs@gmail.com</p></dd></dl>");
+			}
+
+			$('.qtyResults h2').appendTo('.component.categoriesPath');
+
+			$('.component.simpleMenu li:nth-child(2) a').attr('href', 'https://www.mercadopago.com.ar/promociones').attr('target', '_blank').text('Medios de pago');
 		});
 
 	</script>
-		<!--div class="component mshops">Powered by <a class="link" href="http://www.mercadoshops.com.ar" title="MercadoShops">MercadoShops</a></div-->
-</footer>

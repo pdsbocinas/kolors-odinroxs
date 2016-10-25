@@ -8,11 +8,19 @@ body {
 
 h2 {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px !important;
-	line-height:20ps;
+	font-size: 16px;
+	line-height:20px;
 	font-weight: normal;
 	color: #F60;
 	text-decoration: none;
+}
+
+#page-HOME .payMethod {
+    display: none;
+}
+
+#page-CONTACT .promoMP.payMethod {
+    margin: 70px 0 40px 255px;
 }
 
 .price {
@@ -34,7 +42,7 @@ h2 {
 /* Header */
 
 .navWrapper .ch-g4-5 {
-	width: 92%;
+    width: 95.5%;
 }
 
 .navWrapper {
@@ -45,6 +53,18 @@ h2 {
     background-color: #f7941e;
 }
 
+header.wrapper {
+    overflow: visible;
+}
+
+.component.simpleMenu li {
+    margin-left: 0;
+}
+
+.component.simpleMenu li .link {
+    font-size: 11px;
+}
+
 .component.simpleMenu li.first .link {
 	color: #fff;
 }
@@ -53,12 +73,24 @@ h2 {
 	background: #000;
 }
 
-.share, span.find, .component.cartButton .bg-cart, .sprite-footer {
+.share, input.find, .component.cartButton .bg-cart, .sprite-footer {
 	background-image: url('http://www.kolors-odinroxs.com/images/sprite.png');
 	background-repeat: no-repeat;
 	background-color: transparent;
 	display: block;
 	text-indent: -9999px;
+}
+
+input.find {
+    border: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    -webkit-box-shadow: none;
+    height: 20px;
+    width: 34px;
+    background-size: 100% auto;
+    display: inline-block;
 }
 
 .sprite-footer {
@@ -74,7 +106,7 @@ h2 {
 
 .tw {
     width: 23px;
-    height: 23px;
+    height: 22px;
     background-size: 100% auto;
     background-position: 0 -60px;
 }
@@ -83,7 +115,7 @@ h2 {
     width: 23px;
     height: 23px;
     background-size: 100% auto;
-    background-position: 0 -14px;
+    background-position: 0 -133px;
 }
 
 .ins {
@@ -101,11 +133,12 @@ h2 {
     bottom: 0;
     top: 59px;
     right: 40px;
+    height: 30px;
 }
 
 .component.img-logo {
 	padding-top: 44px;
-	margin-bottom: 15px;
+	margin-bottom: 40px;
 }
 
 
@@ -119,21 +152,22 @@ h2 {
     display: block;
 }
 
-span.find {
-	display: block;
-    width: 33px;
-    height: 19px;
-    float: left;
-    background-size: 94% auto;
-    margin: 3px;
-}
-
 #searchWrap .component.searchBar #searchForm .inputField {
 	background: none;
-	height: 14px;
-	width: 145px;
-	margin: 0;
-	color: #fff;
+    height: 14px;
+    width: 115px;
+    margin: 0;
+    color: #fff;
+    padding-right: 5px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+}
+
+#searchWrap .component.searchBar #searchForm .inputField:focus {
+    border: none;
+    border-bottom: 1px solid #fff;
 }
 
 fieldset.subcomponent.search {
@@ -176,33 +210,102 @@ span.share {
 
 .component.cartButton .bg-cart {
 	float: right;
-    height: 11px;
+    height: 10px;
     width: 20px;
     background-size: 65% auto;
     background-position: 0 -122px;
 }
 
 .menu {
-	max-width: 760px;
+	max-width: 970px;
     display: block;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     overflow: hidden;
     margin: 0 auto;
+}
+
+.menu li:first-child {
+    margin-left: 0;
 }
 
 .menu li {
 	float: left;
     display: inline-block;
-    margin-right: 20px;
+    margin-left: 52px;
 }
 
 .menu li a {
 	color: #fff;
     text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    display: block;
+    padding: 0 13px;
+}
+
+.menu li a:hover {
+    background: #f7941e;
+    text-decoration: none;
 }
 
 .simpleMenu li a {
 	color: #fff;
+}
+
+.header-top .be-show {
+    display: none;
+    background: #fff;
+    height: 260px;
+    position: absolute;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.header-top .be-show .column {
+    color: #000;
+    text-transform: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-left: 0;
+}
+
+.header-top .be-show .column li {
+    float: none;
+    display: block;
+    margin-bottom: 7px;
+    border-bottom: 1px solid #ebebeb;
+    margin-left: 0;
+    margin-right: 55px;
+    padding-bottom: 6px;
+}
+
+.header-top .be-show li a {
+    color: #000;
+    text-transform: inherit;
+    font-family: 'Roboto';
+    line-height: 19px;
+}
+
+.header-top .be-show li a:hover {
+    background: transparent;
+    text-decoration: none;
+    color: #f7941e;
+}
+
+
+.header-top .menu li.list-01:hover .be-show,
+.header-top .menu li.list-02:hover .be-show,
+.header-top .menu li.list-03:hover .be-show,
+.header-top .menu li.list-04:hover .be-show,
+.header-top .menu li.list-05:hover .be-show,
+.header-top .menu li.list-06:hover .be-show {
+    display: block;
+}
+
+.menu li.list-06 .be-show {
+    right: 156px;
 }
 
 /* Main Content */
@@ -211,11 +314,50 @@ span.share {
 	padding: 0;
 }
 
+.component.prominentProd {
+	border-bottom: none;
+}
+
+.mainContent .box-image {
+    clear: both;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1080px;
+    margin: 50px auto;
+    padding: 0 60px;
+}
+
+.mainContent .box-image img {
+    width: 100%;
+    display: block;
+}
+
+.mainContent .box-image h3 {
+    font-size: 35px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    padding-top: 28px;
+    text-transform: uppercase;
+}
+
+.mainContent .box-image h3 strong {
+    text-transform: initial;
+    font-size: 19px;
+    padding-left: 8px;
+    font-weight: 100;  
+}
+
+
 /* CAROUSEL */
 
 .ch-carousel.principal {
 	height: 400px!important;
 	position: relative;
+}
+
+.component.prominentProd .ch-carousel-list li {
+    width: 324px!important;
 }
 
 .ch-carousel-adaptive {
@@ -257,17 +399,54 @@ span.share {
 
 .container-filter h4{
 	cursor: pointer;
-	text-transform: uppercase;
-    font-weight: lighter;
+    text-transform: uppercase;
+    font-weight: 400;
     color: #f7941e;
     font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-.container-filter ul{
+
+.container-filter {
 	float: left;
     overflow: hidden;
     padding: 30px 10px 0 70px;
     width: 19%;
+}
+
+.container-filter h3.heading, h3.heading {
+    font-size: 33px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 70px;
+}
+
+.component.itemGallery ul.container-products.header  {
+	overflow: hidden;
+	width: 100%;
+}
+
+.container-products.header li{
+	width: 50%;
+}
+
+.container-products.header li a{
+	float: right;
+    padding: 44px;
+    text-decoration: underline;
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.container-products.header li h3{
+    font-size: 33px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 70px;
+    padding-top: 28px;
 }
 
 .active {
@@ -300,22 +479,31 @@ span.share {
 	float: none;
 	display: block;
 	width: 100%;
+	margin-bottom: 10px;
 }
 
 .component.itemGallery li.list ul li a {
 	color: #000;
-	font-size: 14px;
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
 }
 
-.component.itemGallery .item-gallery.home {
+.component.itemGallery li.list ul li a:hover {
+    text-decoration: none;
+    color: #f7941e;
+}
+
+.component.itemGallery .container-products {
 	width: 74%;
     overflow: hidden;
 }
 
-.component.itemGallery.home li.background {
-	height: 350px;
-    width: 30%;
-    margin-left: 30px;
+.component.itemGallery .item-gallery.home li.background {
+	background: none;
+    height: 340px;
+    overflow: hidden;
+    padding: 23px 39px 0;
 }
 
 .component.itemGallery .item-gallery h2 a{
@@ -326,24 +514,691 @@ span.share {
     font-size: 13px;
 }
 
+#homePrice .price,
 .component.itemGallery .item-gallery .price {
     color: #333;
     font-size: 26px;
 }
 
+/* FORM CONTACT */
 
+.formContact {
+    overflow: hidden;
+    max-width: 905px;
+    margin: 40px auto;
+}
+
+.formContact .title-component {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 23px!important;
+    color: #000;
+}
+
+.formContact .ch-form-hint {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.formContact .ch-form-row label,
+.formContact p.ch-form-row.ch-form-required label {
+    color: #000;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: italic;
+}
+
+.formContact p.ch-form-row input {
+    border: 1px solid #000;
+    border-radius: 0;
+    color: #000;
+    padding: 6px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+} 
+
+.formContact p.ch-form-row textarea {
+    border: 1px solid #000;
+    border-radius: 0;
+    color: #000;
+    padding: 6px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    resize: none;
+}
+
+.formContact .ch-form-required em {
+    display: inline;
+    position: relative;
+    right: -1px;
+    top: -2px;
+}
+
+#contact-btn {
+    margin: 10px 0 0 -167px;
+    background: #000;
+    border-radius: 0;
+    padding: 10px 60px;
+    height: auto;
+    font-family: "Roboto";
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#contact-btn:hover {
+    background-color: white!important;
+    color: #000;
+    border-color: #000;
+    background-image: none;
+    box-shadow: none;    
+}
+
+/* Quienes somos */
+
+.component.page-user {
+    padding: 45px 0px;
+    max-width: 770px;
+    margin: 0 auto;
+    font-family: "Roboto";
+}
+
+h5.title-component {
+    color: #000;
+}
+
+h5.title-component.first {
+    font-family: "Roboto";
+    color: #000;
+    font-size: 40px!important;
+    margin-bottom: 30px;
+    font-weight: 200;
+    padding-left: 130px;
+}
+
+.component.page-user .datos h3 {
+    font-family: "Roboto";
+    color: #000;
+    font-size: 24px!important;
+    margin-bottom: 0px;
+    font-weight: 200;
+    padding-left: 130px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.component.page-user .border {
+    border-top: 1px solid #f7941e;
+}
+
+.component.page-user .box-image {
+    margin-bottom: 15px;
+}
+
+.component.page-user .box-image img {
+    width: 100%;
+}
+
+.component.page-user p {
+    max-width: 575px;
+    padding-left: 136px;
+    margin-bottom: 5px;
+}
+
+.component.page-user .socialData {
+    clear: both;
+    overflow: hidden;
+    padding-left: 130px;
+    padding-top: 20px;
+}
+
+.component.page-user .socialData dd:first-child {
+    margin-left: 0px;
+} 
+
+.component.page-user .socialData dd {
+    float: left;
+    margin-left: 20px;
+}
+
+.component.page-user span {
+    float: left;
+}
+
+.component.page-user .socialData p {
+    overflow: hidden;
+    padding-left: 0px;
+    color: #f7941e;
+    text-transform: uppercase;
+}
+
+.component.page-user .direccion {
+    background-position: 4px -150px;
+    width: 36px;
+    background-size: 100% auto;
+    height: 25px;
+    display: block;
+}
+
+/* Pagina de busqueda */
+
+.component.searchResults .rowsWrapper {
+    clear: both;
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.component.searchResults .clearfix.background {
+    display: none;
+}
+
+.component.searchResults .component.item-gallery {
+    border-top: none;
+}
+
+.component.categoriesPath {
+    border-bottom: none;
+    width: 80%;
+    margin: 50px auto 40px;
+}
+
+.component.categoriesPath li.first {
+    display: none;
+}
+
+.component.categoriesPath li.qtyResults {
+    display: none;
+}
+
+.component.categoriesPath li.selected {
+    background: none;
+    font-size: 21px!important;
+    padding-left: 30px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #000;  
+}
+
+
+.component.searchResults .component.item-gallery figure {
+    top: 3px;
+}
+
+.component.searchResults .component.item-gallery article {
+    border-right: none;
+    border-bottom: none;
+}
+
+.component.searchResults .component.item-gallery h2 {
+    margin: 0 20px 10px 10px;
+    max-height: 4.1em;
+    overflow: hidden;
+    line-height: 1.2em;
+}
+
+.component.searchResults .component.item-gallery h2 a {
+    color: #000;
+    font-weight: 400;
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.ch-pagination li a, .ch-pagination li.ch-pagination-current a, .pagination li a, .pagination li.current a {
+    border-radius: 0;
+    padding: 7px 13px;
+    border: 1px solid #000;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.ch-pagination li a:hover, .pagination li a:hover {
+    color: #fff!important;
+    text-decoration: none;
+    background-color: #f7941e!important;
+    border: 1px solid #f7941e!important;
+    text-transform: uppercase;
+}
+
+.ch-pagination {
+    margin: 40px auto;
+}
+
+.component.searchResults h2 {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    color: #000;
+}
+
+.component.categoriesPath h2{
+    font-size: 40px;
+    font-weight: 100;
+    padding-left: 30px;
+}
+
+.socialData .mail {
+    background-position: 0 -210px;
+    width: 33px!important;
+    background-size: 120% auto;
+    height: 21px!important;
+}
+
+.socialData p {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+p.mail {
+    text-transform: inherit;
+}
+
+.socialData .telefono {
+    background-position: 0 -196px;
+    width: 30px!important;
+    background-size: 138% auto;
+    height: 25px!important;
+}
+
+.component.page-user .location .map {
+    display: none;
+}
+
+/* productos */
+
+#page-VIP .wrapper.main {
+    width: 100%;
+}
+
+#page-VIP .component.categoriesPath {
+    background: #f7941e;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    margin: 0;
+}
+
+#page-VIP .component.categoriesPath ol {
+    padding-left: 168px;
+}
+
+#page-VIP .component.categoriesPath li.first a {
+    display: none;
+}
+
+#page-VIP .component.categoriesPath li a {
+    color: #fff;
+    font-size: 11px;
+}
+
+.component.picviewer .ch-carousel-adaptive {
+    margin-top: 49px;
+    padding-left: 90px;
+}
+
+.component.picviewer .ch-carousel-list li {
+    margin-right: 15px!important;
+}
+
+.component.vip h1 {
+    font-size: 25px;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 22px;
+    padding-top: 48px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.component.vip #fb-like-button{
+    display: none;
+}
+
+.component.vip span.ch-price.price {
+    font-size: 30px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.PaymentList .PaymentAll {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+
+.PaymentList a {
+    color: #000;
+}
+
+.component.vip .ch-actions.buttonBuy a {
+    background: #000;
+    border-radius: 0;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.component.vip .ch-actions.buttonBuy a:hover {
+    background: #f7941e;
+    border-color: #fff;
+    color: #000;
+}
+
+.buttonBuy #contactBtn {
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 300;
+    background: transparent;
+}
+
+.vipSocials {
+    display: block;
+    float: left;
+    padding: 8px 5px;
+    margin: 5px 0px 45px 91px;
+}
+
+.vipSocials .sharesButtons li a {
+    background: #fff;
+    border-radius: 2px;
+    font-size: 19px;
+    color: #000;
+    box-shadow: none;
+    border: 1px solid #000;
+    margin-right: 7px;
+}
+
+.vipSocials .sharesButtons li a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.textShare {
+    display: block;
+    padding: 12px 13px 0 0;
+}
+
+.sharesButtons a.ch-btn.ch-btn-small.btn-grey, .btn-grey {
+    background: transparent;
+    color: #000;
+    border-radius: 2px;
+    border: 1px solid #000;
+    box-shadow: none;
+}
+
+.sharesButtons a.ch-btn.ch-btn-small.btn-grey:hover {
+    border-radius: 2px;
+    background: #f7941e;
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Modal de compra */
+
+.ui-dialog .ui-dialog-title {
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 14px 0;
+}
+
+#frmContact input, #frmContact textarea {
+    border: 1px solid #000;
+    box-shadow: none;
+}
+
+#frmContact .ch-form-row {
+    clear: both;
+}
+
+#frmContact label {
+    font-size: 12px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    float: left;
+}
+
+.ch-form-hint {
+    font-size: 11px;
+    padding: 10px 0 20px;
+}
+
+#frmContact .title {
+    color: #f7941e;
+    font-size: 11px;
+    display: block;
+}
+
+.ch-actions input {
+    background: #000;
+    border-radius: 0;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.ch-actions input:hover {
+    background: #f7941e;
+    border:none;
+    color: #fff;
+}
+
+
+/* Pago y envios */
+
+.card-MLA-diners {
+    display: none;
+}
+
+.card-MLA-cordial {
+    display: none;
+}
+
+.card-MLA-cordobesa {
+    display: none;
+}
+
+.card-MLA-cmr {
+    display: none;
+}
+
+.card-MLA-account_money {
+    display: none;
+}
+
+.component.ch-pagination li.current {
+    border-radius: 0;
+    padding: 7px 13px;
+    border: 1px solid #000;
+    color: #fff;
+    text-transform: uppercase;
+    background: #000;
+}
+
+/* CArrito de compra */
+
+#page-CART .title-component {
+    font-size: 40px!important;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 40px;
+    padding-top: 28px;
+    text-transform: uppercase;
+    padding-left: 65px;
+    color: #000;
+}
+
+.component.shipTable .thead li {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    color: #000;
+}
+
+.component.shipTable .tbody li.colTitulo {
+    line-height: 90px;
+    color: #000;
+}
+
+.component.shipTable .tbody li.colTitulo a {
+    color: #000;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.component.shipTable .tbody li.colCant {
+    line-height: 0px;
+    margin-top: 7px;
+}
+
+.component.shipTable .thead li.colPrice {
+    padding-left: 31px;
+    text-align: center;
+}
+
+.component.shipTable .tbody li.cart-item-price {
+    text-align: center;
+    font-size: 26px;
+    padding: 39px 22px;
+}
+
+#updCartLink {
+    font-size: 11px;
+    line-height: 12px;
+    text-align: left;
+    padding-left: 44px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.component.shipTable ul.order-price-detail .colCant {
+    width: 1%;
+    font-size: 20px;
+    color: #000;
+}
+
+.component.shipTable ul.order-price-detail .colTitulo {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    color: #000;
+    line-height: 16px;
+}
+
+.ms-shipping-calculator-container .ch-box.ms-shipping-calculator {
+    margin-right: 130px;
+    display: block;
+    background: transparent;
+    border-color: #000;
+}
+
+.ch-box.ms-shipping-calculator label {
+    color: #000;
+    text-transform: uppercase;
+}
+
+.ms-shipping-calculator__form-input {
+    border: solid 1px #000;
+}
+
+.ms-shipping-calculator .ms-shipping-calculator__form-btn {
+    border-color: #000;
+    color: #000;
+}
+
+.component.shipTable .tfoot hr{
+    border-bottom: 1px solid #f7941e;
+}
+
+.component.shipTable .tfoot li {
+    text-align: center;
+    padding: 1%;
+    min-height: 21px;
+    line-height: 28px;
+    border-radius: 2px;
+    margin-right: 75px;
+}
+
+#total-to-pay {
+    font-size: 28px;
+    display: table-cell;
+}
+
+#page-CART .component.paymentMethods2#payMethod {
+    display: none;
+}
+
+#newBuyCart-submit {
+    margin-right: 83px;
+    background: #000;
+    border-radius: 0;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.component.shipTable .ch-actions.cart {
+    padding-bottom: 40px;
+}
+
+/* checkout de pago */
+
+#checkout-user-data textarea,
+#checkout-user-data .input-select, 
+#checkout-user-data input {
+    border: 1px solid #000;
+    border-radius: 0;
+    color: #000;
+    padding: 6px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.side-by-side > input {
+    width: 95%;
+}
 
 /* Footer */
 
 footer.wrapper {
 	background: #000;
-	padding: 80px 40px;
+	padding: 9px 0px 40px 45px;
+}
+
+.box-datos-footer {
+    clear: both;
+    padding-left: 28px;
+}
+
+.box-datos-footer .dato p {
+    padding-left: 27px;
+}
+
+footer .component_share {
+    margin-top: 25px;
 }
 
 .companyData a.logo {
 	overflow: hidden;
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
+    max-width: 390px;
+    height: auto;
+    float: left;
+}
+
+.companyData a.logo img {
+    width: 100%;
 }
 
 .companyData ul {
@@ -351,7 +1206,7 @@ footer.wrapper {
 }
 
 .companyData ul li {
-	margin-bottom: 15px;
+	margin-bottom: 9px;
 }
 
 .companyData ul li a {
@@ -367,13 +1222,21 @@ footer.wrapper {
 
 .component.addressExtended .socialData dd span {
     display: block;
-    width: 24px;
-    height: 28px;
+    width: 23px;
+    height: 23px;
     float: left;
 }
 
+footer .title p {    
+    font-family: 'Roboto';
+    line-height: 32px;
+    margin-right: 10px;
+    font-size: 13px;
+    color: #fff;
+}
+
 .direccion {
-	background-position: 0 -178px;
+	background-position: 0 -170px;
     width: 36px;
     background-size: 177% auto;
     height: 25px;
@@ -402,15 +1265,19 @@ footer.wrapper {
 }
 
 .component.addressExtended dl.socialData {
-	width: 65%;
-	overflow: hidden;
-	padding-top: 12px;
+	width: 66%;
+    overflow: hidden;
+    padding-top: 12px;
 }
-
-.component.addressExtended dl.socialData p {
-	padding-left: 45px;
+.component.addressExtended dl.socialData .dato p,
+.component.addressExtended dl.socialData a {
+	padding-left: 36px;
 	color: #f7941e;
 	text-transform: uppercase;
+}
+
+.component.addressExtended dl.socialData a {
+    padding-left: 9px;
 }
 
 
